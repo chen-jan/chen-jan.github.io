@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Jan Chen. Information Systems at TUM and Technology Management at CDTM. AI research, building, scholarship outreach, and music.">
+  <title>Jan Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/minimal.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Jan Chen</h1>
+      <div class="identity-right"><img class="portrait" src="assets/asset-1.jpg" width="88" height="88" alt="Jan Chen"><button id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true"></span></button></div>
+    </header>
+    <p class="first-line">Fourth-year BSc Information Systems @ <a href="https://www.tum.de/">TUM</a>, and Technology Management @ <a href="https://www.cdtm.com/">CDTM</a>.</p>
+
+    <div class="block">
+      <p>I love building AI systems across language, time series, voice, and music. My <button class="inline" data-panel="research" aria-expanded="false" aria-controls="research">research</button> explores what large generative models learn internally, and how understanding this can help with interpretability, alignment, and safety.</p>
+      <section id="research" class="expansion" aria-label="Research" hidden>
+{{ research }}
+</section>
+    </div>
+
+    <div class="block">
+      <p>My studies have taken me through <button class="inline" data-panel="experience" aria-expanded="false" aria-controls="experience">startups, consulting, and AI research</button> in Singapore and the US. Most recently, I was at the MIT Media Lab; before that, NUS’s NExT++ Research Center. My <button class="inline" data-panel="building" aria-expanded="false" aria-controls="building">projects</button> range from an autonomous wheel loader to Voice AI for customer service.</p>
+      <section id="experience" class="expansion" aria-label="Experience" hidden>
+{{ experience }}
+</section>
+      <section id="building" class="expansion" aria-label="Projects" hidden>
+{{ building }}
+</section>
+    </div>
+
+    <div class="block">
+      <p>Outside university, I’ve been organizing <button class="inline" data-panel="scholarships" aria-expanded="false" aria-controls="scholarships">scholarship information sessions</button> across Germany, led the <a href="https://www.tuinvest.de/">TU Investment Club</a>, and tried to find my way back to the <button class="inline" data-panel="music" aria-expanded="false" aria-controls="music">piano</button> whenever I can.</p>
+      <section id="scholarships" class="expansion" aria-label="Scholarship outreach" hidden>
+{{ scholarships }}
+</section>
+      <section id="music" class="expansion" aria-label="Piano and classical music" hidden>
+{{ music }}
+</section>
+    </div>
+
+    <p class="support">{{ support }}</p>
+    <p class="contact">{{ contact }}</p>
+
+    <nav class="index" aria-label="Explore Jan’s work"><button class="inline" data-panel="research" aria-expanded="false" aria-controls="research">Research</button><button class="inline" data-panel="experience" aria-expanded="false" aria-controls="experience">Experience</button><button class="inline" data-panel="building" aria-expanded="false" aria-controls="building">Projects</button><button class="inline" data-panel="scholarships" aria-expanded="false" aria-controls="scholarships">Scholarship Outreach</button><button class="inline" data-panel="music" aria-expanded="false" aria-controls="music">Piano</button></nav>
+    <footer><a href="index.html">← Main page</a></footer>
+  </main>
+  <script src="assets/minimal.js"></script>
+</body>
+</html>

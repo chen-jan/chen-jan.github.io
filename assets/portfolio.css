@@ -1,0 +1,188 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap');
+    #jan-portfolio { color-scheme:light dark; --jp-paper:light-dark(#faf9f6,#191c1a); --jp-ink:light-dark(#232b27,#e8ece7); --jp-muted:light-dark(#616961,#a6b0a7); --jp-accent:light-dark(#32614c,#a5c5ad); --jp-line:light-dark(#dedfd7,#38423a); --jp-tile:light-dark(#f0f0e9,#232a25); background:var(--jp-paper); color:var(--jp-ink); font-family:'DM Sans',sans-serif; font-size:15px; line-height:1.7; padding:36px 52px; }
+    #jan-portfolio * { box-sizing:border-box; }
+    #jan-portfolio a { color:var(--jp-accent); text-decoration:none; text-underline-offset:4px; }
+    #jan-portfolio a:hover { text-decoration:underline; }
+    #jan-portfolio button { font:inherit; cursor:pointer; }
+    #jan-portfolio button:focus-visible,#jan-portfolio a:focus-visible { outline:2px solid var(--jp-accent); outline-offset:5px; }
+    #jan-portfolio .jp-top { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:840px; margin:0 auto 48px; }
+    #jan-portfolio .jp-brand { font-family:'IBM Plex Mono',monospace; font-size:12px; }
+    #jan-portfolio .jp-nav { display:flex; gap:20px; align-items:center; flex-wrap:wrap; font-size:12px; }
+    #jan-portfolio .jp-nav a { color:var(--jp-muted); }
+    #jan-portfolio .jp-theme { display:flex; align-items:center; gap:7px; padding:5px 0; background:transparent; border:0; color:var(--jp-muted); font-size:12px; }
+    #jan-portfolio .jp-layout { max-width:840px; margin:auto; }
+    #jan-portfolio .jp-identity { display:grid; grid-template-columns:118px 1fr; gap:28px; align-items:center; margin-bottom:25px; }
+    #jan-portfolio .jp-portrait { width:118px; height:122px; object-fit:cover; border-radius:50%; }
+    #jan-portfolio h1 { font-family:'Source Serif 4',Georgia,serif; font-size:48px; font-weight:400; line-height:1.08; letter-spacing:-1.7px; margin:0 0 14px; color:var(--jp-ink); }
+    #jan-portfolio .jp-social { display:flex; flex-wrap:wrap; gap:9px 18px; font-size:13px; }
+    #jan-portfolio .jp-railnav { display:none; }
+    #jan-portfolio .jp-intro { margin-bottom:44px; }
+    #jan-portfolio p { margin:0 0 14px; }
+    #jan-portfolio strong { font-weight:600; }
+    #jan-portfolio .jp-support { color:var(--jp-muted); font-size:12px; margin-top:21px; }
+    #jan-portfolio .jp-section { display:grid; grid-template-columns:114px minmax(0,1fr); column-gap:24px; border-top:1px solid var(--jp-line); padding-top:26px; margin-top:32px; scroll-margin-top:20px; }
+    #jan-portfolio h2 { font:400 12px/1.5 'IBM Plex Mono',monospace; margin:0; color:var(--jp-muted); }
+    #jan-portfolio .jp-num { display:none; }
+    #jan-portfolio h3 { font-size:16px; line-height:1.45; font-weight:600; margin:0 0 7px; }
+    #jan-portfolio .jp-paper { display:grid; grid-template-columns:174px minmax(0,1fr); gap:20px; margin-bottom:29px; }
+    #jan-portfolio .jp-paper:last-child { margin-bottom:0; }
+    #jan-portfolio .jp-figure { display:flex; align-items:center; background:#fff; padding:8px; border:1px solid var(--jp-line); align-self:start; border-radius:4px; min-height:105px; }
+    #jan-portfolio .jp-figure img { display:block; width:100%; height:auto; }
+    #jan-portfolio .jp-authors { font-size:12px; line-height:1.6; color:var(--jp-muted); margin-bottom:6px; }
+    #jan-portfolio .jp-venue { font:400 11px/1.6 'IBM Plex Mono',monospace; color:var(--jp-accent); margin-bottom:8px; }
+    #jan-portfolio .jp-description { font-size:13px; line-height:1.65; margin-bottom:9px; }
+    #jan-portfolio .jp-links { display:flex; flex-wrap:wrap; gap:14px; font-size:12px; }
+    #jan-portfolio .jp-soon { color:var(--jp-muted); }
+    #jan-portfolio .jp-job { display:grid; grid-template-columns:1fr 66px; gap:18px; margin-bottom:21px; align-items:center; }
+    #jan-portfolio .jp-job h3 { margin:0; font-size:15px; }
+    #jan-portfolio .jp-role { font-size:13px; margin:0; }
+    #jan-portfolio .jp-date { font:400 11px/1.7 'IBM Plex Mono',monospace; color:var(--jp-muted); }
+    #jan-portfolio .jp-logo { width:66px; height:42px; padding:5px; border-radius:3px; background:#fff; display:flex; align-items:center; justify-content:center; }
+    #jan-portfolio .jp-logo img { display:block; width:100%; height:100%; object-fit:contain; }
+    #jan-portfolio .jp-logo span { font-family:'DM Sans',sans-serif; font-size:14px; font-weight:700; text-align:center; line-height:1.2; color:#494949; }
+    #jan-portfolio .jp-insights { padding-top:15px; border-top:1px solid var(--jp-line); font-size:12px; line-height:1.7; color:var(--jp-muted); }
+    #jan-portfolio .jp-insights strong { color:var(--jp-ink); font-weight:500; }
+    #jan-portfolio .jp-feature { display:grid; grid-template-columns:minmax(0,1fr) 208px; gap:25px; align-items:start; }
+    #jan-portfolio .jp-feature img { width:100%; height:auto; border-radius:5px; display:block; }
+    #jan-portfolio .jp-feature p { font-size:13px; line-height:1.75; }
+    #jan-portfolio .jp-caption { font-size:11px; color:var(--jp-muted); display:block; margin-top:7px; }
+    #jan-portfolio figure { margin:0; }
+    #jan-portfolio .jp-stats { font-size:13px; color:var(--jp-accent); margin-bottom:12px; }
+    #jan-portfolio .jp-footer { display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-top:48px; padding-top:20px; border-top:1px solid var(--jp-line); font-size:12px; color:var(--jp-muted); }
+    #jan-portfolio .jp-cv { border-top:1px solid var(--jp-line); padding:12px 0; margin-top:20px; font-size:13px; }
+    #jan-portfolio .jp-cv summary { cursor:pointer; color:var(--jp-accent); }
+    #jan-portfolio .jp-cv p { margin-top:12px; }
+    #jan-portfolio[data-direction="academic"] { --jp-paper:light-dark(#ffffff,#171b22); --jp-ink:light-dark(#24272b,#e5e9ef); --jp-muted:light-dark(#646b74,#a4afbd); --jp-accent:light-dark(#285f98,#91b7df); --jp-line:light-dark(#e0e4e8,#363e4b); font-family:Georgia,serif; padding:35px 42px; font-size:16px; line-height:1.65; }
+    #jan-portfolio[data-direction="academic"] .jp-layout { display:grid; grid-template-columns:170px minmax(0,1fr); gap:35px; max-width:960px; }
+    #jan-portfolio[data-direction="academic"] .jp-top { display:none; }
+    #jan-portfolio[data-direction="academic"] .jp-identity { display:flex; flex-direction:column; align-items:flex-start; gap:18px; margin:0; }
+    #jan-portfolio[data-direction="academic"] .jp-portrait { width:150px; height:150px; border-radius:50%; }
+    #jan-portfolio[data-direction="academic"] h1 { font-size:31px; letter-spacing:-.7px; }
+    #jan-portfolio[data-direction="academic"] .jp-social { flex-direction:column; gap:4px; font-family:'DM Sans',sans-serif; }
+    #jan-portfolio[data-direction="academic"] .jp-railnav { display:flex; flex-direction:column; gap:7px; margin-top:23px; font:400 12px/1.6 'DM Sans',sans-serif; }
+    #jan-portfolio[data-direction="academic"] .jp-theme { font-family:'DM Sans',sans-serif; align-self:flex-start; }
+    #jan-portfolio[data-direction="academic"] .jp-section { display:block; padding-top:22px; margin-top:25px; }
+    #jan-portfolio[data-direction="academic"] h2 { font:500 21px/1.4 'Source Serif 4',Georgia,serif; margin-bottom:20px; color:var(--jp-ink); }
+    #jan-portfolio[data-direction="academic"] h3 { font-family:'DM Sans',sans-serif; font-size:14px; }
+    #jan-portfolio[data-direction="academic"] .jp-intro { margin-bottom:25px; }
+    #jan-portfolio[data-direction="academic"] .jp-paper { grid-template-columns:150px minmax(0,1fr); gap:17px; margin-bottom:24px; }
+    #jan-portfolio[data-direction="academic"] .jp-venue,#jan-portfolio[data-direction="academic"] .jp-date { font-family:'DM Sans',sans-serif; font-size:11px; }
+    #jan-portfolio[data-direction="academic"] .jp-feature { grid-template-columns:minmax(0,1fr) 170px; gap:22px; }
+    @media (max-width:700px) {
+      #jan-portfolio,#jan-portfolio[data-direction="academic"]{ padding:26px 24px; }
+      #jan-portfolio .jp-top { margin-bottom:32px; }
+      #jan-portfolio .jp-nav { gap:12px; }
+      #jan-portfolio .jp-brand { display:none; }
+      #jan-portfolio .jp-section { display:block; }
+      #jan-portfolio h2 { margin-bottom:22px; }
+      #jan-portfolio[data-direction="academic"] .jp-layout{ display:block; }
+      #jan-portfolio[data-direction="academic"] .jp-identity{ display:grid; grid-template-columns:105px 1fr; gap:22px; margin-bottom:26px; }
+      #jan-portfolio[data-direction="academic"] .jp-portrait{ width:105px; height:112px; }
+      #jan-portfolio[data-direction="academic"] .jp-social { flex-direction:row; gap:5px 13px; }
+      #jan-portfolio[data-direction="academic"] .jp-railnav{ display:none; }
+      #jan-portfolio[data-direction="academic"] .jp-top { display:flex; margin-bottom:25px; }
+    }
+    @media (max-width:440px) {
+      #jan-portfolio,#jan-portfolio[data-direction="academic"]{ padding:22px 18px; }
+      #jan-portfolio .jp-identity { grid-template-columns:90px 1fr; gap:19px; }
+      #jan-portfolio .jp-portrait { width:90px; height:95px; }
+      #jan-portfolio h1 { font-size:37px; }
+      #jan-portfolio .jp-paper,#jan-portfolio[data-direction="academic"] .jp-paper { grid-template-columns:1fr; gap:15px; }
+      #jan-portfolio .jp-figure { width:100%; min-height:100px; }
+      #jan-portfolio .jp-figure img { max-height:150px; object-fit:contain; }
+      #jan-portfolio .jp-feature,#jan-portfolio[data-direction="academic"] .jp-feature { grid-template-columns:1fr; }
+      #jan-portfolio .jp-authors,#jan-portfolio .jp-venue,#jan-portfolio .jp-date,#jan-portfolio .jp-caption { font-size:11px; }
+    }
+    @media (pointer:coarse) { #jan-portfolio .jp-nav a,#jan-portfolio .jp-social a,#jan-portfolio .jp-links a,#jan-portfolio .jp-theme { min-height:44px; display:inline-flex; align-items:center; } }
+  
+html { scroll-behavior:smooth; }
+body { margin:0; }
+* { box-sizing:border-box; }
+.comparison-bar { position:sticky; top:0; z-index:10; background:#202420; color:#f1f2ec; font:12px/1.5 'DM Sans',sans-serif; display:flex; justify-content:space-between; align-items:center; gap:18px; padding:13px 28px; border-bottom:1px solid #40443e; }
+.comparison-bar a { color:inherit; text-decoration:none; padding:5px 9px; border-radius:4px; }
+.comparison-bar a[aria-current=page] { background:#414a40; }
+.comparison-bar nav { display:flex; flex-wrap:wrap; gap:8px; }
+.comparison-bar .all-designs { color:#c7d0c2; }
+.embed .comparison-bar { display:none; }
+#jan-portfolio { min-height:100vh; padding-top:48px; padding-bottom:38px; }
+#jan-portfolio .jp-section { scroll-margin-top:88px; }
+#jan-portfolio .jp-intro { font-size:17px; line-height:1.8; }
+#jan-portfolio .jp-support { font-size:13px; line-height:1.65; }
+#jan-portfolio .jp-description,#jan-portfolio .jp-feature p { font-size:14px; }
+#jan-portfolio .jp-authors,#jan-portfolio .jp-links,#jan-portfolio .jp-role { font-size:13px; }
+#jan-portfolio .jp-date,#jan-portfolio .jp-venue { font-size:12px; }
+#jan-portfolio .jp-collaborators { font:13px/1.7 'DM Sans',sans-serif; color:var(--jp-muted); margin:7px 0 0; }
+#jan-portfolio .jp-logo { width:80px; height:54px; padding:4px; }
+#jan-portfolio .jp-job { grid-template-columns:minmax(0,1fr) 80px; margin-bottom:27px; }
+#jan-portfolio .jp-figure { min-height:120px; padding:8px; }
+#jan-portfolio .jp-caption { font-size:12px; }
+#jan-portfolio .jp-feature a { font-size:14px; }
+#jan-portfolio[data-direction=academic] { padding-top:66px; }
+#jan-portfolio[data-direction=academic] .jp-layout { max-width:1070px; grid-template-columns:185px minmax(0,1fr); gap:58px; }
+#jan-portfolio[data-direction=academic] .jp-identity { position:sticky; top:95px; align-self:start; }
+#jan-portfolio[data-direction=academic] .jp-portrait { width:158px; height:158px; }
+#jan-portfolio[data-direction=academic] .jp-section { margin-top:33px; padding-top:26px; }
+#jan-portfolio[data-direction=academic] .jp-paper { grid-template-columns:205px minmax(0,1fr); gap:26px; }
+#jan-portfolio[data-direction=academic] h3 { font-size:16px; }
+#jan-portfolio[data-direction=academic] .jp-feature { grid-template-columns:minmax(0,1fr) 210px; }
+@media(max-width:850px) {
+ #jan-portfolio[data-direction=academic] .jp-layout{ grid-template-columns:150px minmax(0,1fr); gap:32px; }
+ #jan-portfolio[data-direction=academic] .jp-paper { grid-template-columns:150px minmax(0,1fr); gap:18px; }
+}
+@media(max-width:700px) {
+ .comparison-bar { padding:10px 12px; gap:4px; flex-wrap:wrap; justify-content:center; }
+ .comparison-bar .all-designs { display:none; }
+ .comparison-bar nav { gap:3px; }
+ #jan-portfolio[data-direction=academic]{ padding:26px 22px; }
+ #jan-portfolio[data-direction=academic] .jp-layout{ display:block; }
+ #jan-portfolio[data-direction=academic] .jp-identity{ position:static; }
+ #jan-portfolio[data-direction=academic] .jp-feature { grid-template-columns:1fr; }
+ #jan-portfolio .jp-nav a,#jan-portfolio .jp-theme { min-height:34px; }
+}
+@media(max-width:440px) {
+ #jan-portfolio[data-direction=academic] .jp-paper{ grid-template-columns:1fr; }
+ #jan-portfolio .jp-intro { font-size:16px; }
+ #jan-portfolio .jp-social { gap:5px 12px; }
+ #jan-portfolio .jp-job { gap:12px; grid-template-columns:minmax(0,1fr) 56px; }
+ #jan-portfolio .jp-logo { width:56px; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+#jan-portfolio .link-arrow { display:inline-block; }
+@media(prefers-reduced-motion:no-preference) {
+ #jan-portfolio { transition:background-color .18s ease,color .18s ease; }
+ #jan-portfolio a,#jan-portfolio .jp-theme { transition:color .14s ease,opacity .14s ease; }
+ #jan-portfolio .link-arrow { transition:transform .14s ease; }
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+ #jan-portfolio .jp-theme:hover { opacity:.72; }
+ #jan-portfolio a:hover>.link-arrow { transform:translate(1px,-1px); }
+}
+
+/* Match the portrait to its grid cell at phone widths. */
+#jan-portfolio .jp-support { color:var(--jp-ink); font-size:inherit; line-height:inherit; }
+@media(max-width:700px) {
+ #jan-portfolio[data-direction=academic] .jp-identity { grid-template-columns:96px minmax(0,1fr); gap:20px; align-items:center; }
+ #jan-portfolio[data-direction=academic] .jp-portrait { width:96px; height:96px; max-width:100%; margin:0; }
+ #jan-portfolio .jp-identity>div { min-width:0; }
+ #jan-portfolio .jp-social { flex-wrap:wrap; }
+}
+
+.bank-stack { position:relative; width:74px; height:64px; }
+.bank-stack img { position:absolute; display:block; width:42px; height:42px; object-fit:contain; background:white; border:3px solid white; border-radius:3px; box-shadow:0 1px 3px #0002; }
+.bank-stack img:nth-child(1) { right:0; top:20px; z-index:1; }
+.bank-stack img:nth-child(2) { right:14px; top:10px; z-index:2; }
+.bank-stack img:nth-child(3) { right:28px; top:0; z-index:3; }
+@media(max-width:650px) { .bank-stack { width:47px; } .bank-stack img { width:32px; height:32px; border-width:2px; } .bank-stack img:nth-child(2) { right:8px; } .bank-stack img:nth-child(3) { right:16px; } }
+#jan-portfolio .jp-projects { display:grid; gap:32px; }
+#jan-portfolio .jp-social a { display:inline-flex; align-items:center; gap:7px; }
+#jan-portfolio .social-icon { display:inline-block; flex:0 0 14px; width:14px; height:14px; background:currentColor; mask:var(--social-icon) center / contain no-repeat; -webkit-mask:var(--social-icon) center / contain no-repeat; }
+.icon-envelope { --social-icon:url('icon-envelope.svg'); }
+.icon-google-scholar { --social-icon:url('icon-google-scholar.svg'); }
+.icon-github { --social-icon:url('icon-github.svg'); }
+.icon-linkedin { --social-icon:url('icon-linkedin.svg'); }
+
+/* Main site has no preview switcher above the profile. */
+#jan-portfolio[data-direction=academic] .jp-identity { top:45px; }
+#jan-portfolio .jp-section { scroll-margin-top:30px; }
+

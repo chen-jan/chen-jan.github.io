@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jan Chen — AI research, building, scholarship outreach, and classical music."><title>Jan Chen</title><link rel="stylesheet" href="assets/portfolio.css"><script>if(new URLSearchParams(location.search).has('embed'))document.documentElement.classList.add('embed');document.documentElement.style.colorScheme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';</script></head>
+<body>
+<div id="jan-portfolio" data-direction="academic" aria-label="Jan Chen portfolio">
+  <header class="jp-top">
+    <a class="jp-brand" href="#jan-about">jan chen</a>
+    <nav class="jp-nav" aria-label="Main navigation">
+      <a href="#jan-research">Research</a><a href="#jan-experience">Experience</a><a href="#jan-projects">Projects</a><a href="#jan-music">Piano</a>
+      <button class="jp-theme" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span><span class="theme-label">Dark mode</span></button>
+    </nav>
+  </header>
+  <div class="jp-layout">
+    <aside class="jp-identity">
+      <img class="jp-portrait" src="assets/asset-1.jpg" alt="Jan Chen" width="118" height="122">
+      <div>
+        <h1>Jan Chen</h1>
+        <div class="jp-social"><a href="mailto:jan.chen@cdtm.com"><span class="social-icon icon-envelope" aria-hidden="true"></span>Email</a><a href="https://scholar.google.com/citations?user=fLokEm8AAAAJ&amp;hl=en"><span class="social-icon icon-google-scholar" aria-hidden="true"></span>Google Scholar</a><a href="https://github.com/chen-jan" target="_blank" rel="noreferrer"><span class="social-icon icon-github" aria-hidden="true"></span>GitHub</a><a href="https://www.linkedin.com/in/chen-jan/" target="_blank" rel="noreferrer"><span class="social-icon icon-linkedin" aria-hidden="true"></span>LinkedIn</a></div>
+        <nav class="jp-railnav" aria-label="Sections"><a href="#jan-about">About</a><a href="#jan-research">Research</a><a href="#jan-experience">Experience</a><a href="#jan-projects">Projects</a><a href="#jan-scholarships">Scholarship Outreach</a><a href="#jan-music">Piano</a><button class="jp-theme" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span><span class="theme-label">Dark mode</span></button></nav>
+      </div>
+    </aside>
+    <main>
+      <div class="jp-intro" id="jan-about">
+        <p>I’m a fourth-year BSc Information Systems student at the <a href="https://www.tum.de/" target="_blank" rel="noreferrer">Technical University of Munich</a> and a student at the <a href="https://www.cdtm.com/" target="_blank" rel="noreferrer">Center for Digital Technology and Management (CDTM)</a>.</p>
+        <p>I love building AI systems across language, time series, voice, and music. Currently, I’m especially curious about what large generative models learn internally, and how this interpretability can help with alignment, and safety topics.</p>
+        <p>The past few years have taken me through startups, consulting, and AI research in Singapore and the US. Outside university, I’ve organized <a href="#jan-scholarships">scholarship information sessions across Germany</a>, led the <a href="https://www.tuinvest.de/" target="_blank" rel="noreferrer">TU Investment Club</a>, and tried to find my way back to the <a href="#jan-music">piano</a> whenever I can.</p>
+        <p class="jp-support">{{ support }}</p>
+      </div>
+      <section class="jp-section" id="jan-research" aria-labelledby="jan-research-title">
+        <h2 id="jan-research-title"><span class="jp-num">01</span>Research</h2>
+        {{ research }}
+      </section>
+      <section class="jp-section" id="jan-experience" aria-labelledby="jan-experience-title">
+        <h2 id="jan-experience-title"><span class="jp-num">02</span>Experience</h2>
+        {{ experience }}
+      </section>
+      <section class="jp-section" id="jan-projects" aria-labelledby="jan-projects-title">
+        <h2 id="jan-projects-title"><span class="jp-num">03</span>Projects</h2>
+        {{ building }}
+      </section>
+      <section class="jp-section" id="jan-scholarships" aria-labelledby="jan-scholarships-title">
+        <h2 id="jan-scholarships-title"><span class="jp-num">04</span>Scholarship Outreach</h2>
+        {{ scholarships }}
+      </section>
+      <section class="jp-section" id="jan-music" aria-labelledby="jan-music-title">
+        <h2 id="jan-music-title"><span class="jp-num">05</span>Piano</h2>
+        {{ music }}
+      </section>
+      <footer class="jp-footer"><span>Jan Chen</span><a href="mailto:jan.chen@cdtm.com">jan.chen@cdtm.com <span class="link-arrow" aria-hidden="true">↗</span></a><a href="#jan-about">Back to top ↑</a></footer>
+    </main>
+  </div>
+  
+</div>
+
+<script src="assets/portfolio.js"></script></body></html>

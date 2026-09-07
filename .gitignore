@@ -1,0 +1,4 @@
+# Local-only material: raw source files, private notes, old design history.
+_local/
+__pycache__/
+.DS_Store
