@@ -88,6 +88,13 @@ figure { margin:0; }
  main>.block:nth-of-type(3) { animation-delay:140ms; }
  main>.index,main>.support,main>footer { animation-delay:175ms; }
  @keyframes arrive { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+ /* Entries inside a panel arrive the same way the page does, with a short cascade, each time the panel opens. */
+ .expansion > div > * { animation:arrive .5s cubic-bezier(.2,.65,.3,1) both; }
+ .expansion > div > :nth-child(2) { animation-delay:55ms; }
+ .expansion > div > :nth-child(3) { animation-delay:110ms; }
+ .expansion > div > :nth-child(4) { animation-delay:165ms; }
+ .expansion > div > :nth-child(5) { animation-delay:220ms; }
+ .expansion > div > :nth-child(n+6) { animation-delay:275ms; }
 }
 @media(hover:hover) and (pointer:fine) {
  .inline:hover { background:light-dark(#f1f1f1,#1d1d1d); }
