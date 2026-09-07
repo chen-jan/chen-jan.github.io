@@ -114,3 +114,12 @@ figure { margin:0; }
 .contact { margin-top:19px; }
 .jp-projects { display:grid; gap:32px; }
 .jp-project img { max-width:100%; }
+/* Projects: image beside the copy at the same size and position as the research figures. */
+.jp-project { display:flex; flex-direction:row; align-items:flex-start; gap:25px; }
+.jp-project > div { flex:1 1 auto; min-width:0; }
+.jp-project figure { flex:0 0 32%; max-width:280px; }
+.jp-project figure img { display:block; width:100%; max-width:none; height:auto; }
+@media(max-width:650px) {
+ .jp-project { flex-direction:column; gap:17px; }
+ .jp-project figure { flex:none; width:100%; max-width:310px; }
+}
